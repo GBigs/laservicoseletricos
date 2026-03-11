@@ -1,4 +1,4 @@
-import { Wrench, Lightbulb, Settings, Shield } from "lucide-react";
+﻿import { Wrench, Lightbulb, Settings, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const services = [
@@ -65,18 +65,14 @@ const Services = () => {
     <section id="servicos" className="py-20 md:py-28">
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
-          {/* Header */}
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Serviços Elétricos Especializados
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Serviços Elétricos Especializados</h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Atendemos residências, prédios e empresas com agilidade, precisão e total segurança. 
+              Atendemos residências, prédios e empresas com agilidade, precisão e total segurança.
               Se envolve fiação, energia ou automação, podemos fazer!
             </p>
           </div>
 
-          {/* Services Grid */}
           <div className="grid md:grid-cols-2 gap-8">
             {services.map((service, index) => (
               <div
@@ -86,10 +82,10 @@ const Services = () => {
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:scale-110 transition-all duration-300">
                   <service.icon className="w-7 h-7 text-primary group-hover:text-primary-foreground transition-colors" />
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-foreground mb-3">{service.title}</h3>
                 <p className="text-muted-foreground mb-6">{service.description}</p>
-                
+
                 <ul className="space-y-2">
                   {service.items.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start gap-2 text-sm text-foreground/80">
@@ -102,7 +98,6 @@ const Services = () => {
             ))}
           </div>
 
-          {/* CTA */}
           <div className="text-center mt-12">
             <Button onClick={scrollToContact} size="lg">
               Solicitar Orçamento para Seu Projeto

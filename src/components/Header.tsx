@@ -1,17 +1,12 @@
-import logo from "@/assets/logo.svg";
-import { Button } from "@/components/ui/button";
+﻿import { Button } from "@/components/ui/button";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { useState } from "react";
 
-const whatsappUrl = "https://wa.me/5548996107803?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20ser%20atendido%21";
+const whatsappUrl =
+  "https://wa.me/5548988287501?text=Ola%2C%20vim%20pelo%20site%20e%20gostaria%20de%20atendimento.";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const scrollToContact = () => {
-    document.getElementById("contato")?.scrollIntoView({ behavior: "smooth" });
-    setIsMenuOpen(false);
-  };
 
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -23,16 +18,18 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <a href="#" className="flex items-center">
-            <img src={logo} alt="Guilherme Soluções Elétricas" className="h-14 w-auto" />
+            <span className="text-lg md:text-xl font-black">
+              <span className="text-primary">LA</span>
+              <span className="text-foreground"> Servicos Eletricos</span>
+            </span>
           </a>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-8">
             <button
               onClick={() => scrollToSection("servicos")}
               className="text-foreground/80 hover:text-foreground transition-colors font-medium"
             >
-              Serviços
+              Servicos
             </button>
             <button
               onClick={() => scrollToSection("sobre")}
@@ -60,7 +57,6 @@ const Header = () => {
             </Button>
           </nav>
 
-          {/* Mobile Menu Button */}
           <button
             className="md:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -70,7 +66,6 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <nav className="md:hidden py-6 border-t border-border bg-background">
             <div className="flex flex-col gap-4">
@@ -78,7 +73,7 @@ const Header = () => {
                 onClick={() => scrollToSection("servicos")}
                 className="text-foreground/80 hover:text-foreground transition-colors font-medium py-2 text-left"
               >
-                Serviços
+                Servicos
               </button>
               <button
                 onClick={() => scrollToSection("sobre")}

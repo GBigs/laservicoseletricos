@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet-async";
+﻿import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs";
@@ -13,14 +13,14 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Guilherme Soluções Elétricas | Instalações, Manutenção e Segurança Eletrônica</title>
+        <title>LA Servicos Eletricos | Instalacoes, Manutencao e Seguranca Eletronica</title>
         <meta
           name="description"
-          content="Serviços elétricos residenciais e prediais com qualidade, segurança e preço justo. Instalações elétricas, iluminação LED, manutenção e segurança eletrônica. Orçamento grátis!"
+          content="Servicos eletricos residenciais e prediais com qualidade, seguranca e preco justo. Instalacoes eletricas, iluminacao LED, manutencao e seguranca eletronica. Orcamento gratis!"
         />
         <meta
           name="keywords"
-          content="eletricista, instalações elétricas, manutenção elétrica, iluminação LED, segurança eletrônica, CFTV, automação residencial"
+          content="eletricista, instalacoes eletricas, manutencao eletrica, iluminacao LED, seguranca eletronica, CFTV, automacao residencial"
         />
       </Helmet>
 

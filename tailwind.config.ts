@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+﻿import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
@@ -53,7 +53,6 @@ export default {
         electric: {
           yellow: "hsl(var(--electric-yellow))",
           "yellow-dark": "hsl(var(--electric-yellow-dark))",
-          orange: "hsl(var(--electric-orange))",
         },
         dark: "hsl(var(--dark))",
         gray: {
@@ -87,8 +86,8 @@ export default {
           to: { opacity: "1", transform: "translateY(0)" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px hsl(45 100% 51% / 0.3)" },
-          "50%": { boxShadow: "0 0 40px hsl(45 100% 51% / 0.5)" },
+          "0%, 100%": { boxShadow: "0 0 20px hsl(48 100% 50% / 0.3)" },
+          "50%": { boxShadow: "0 0 40px hsl(48 100% 50% / 0.5)" },
         },
       },
       animation: {
@@ -101,3 +100,4 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
+
